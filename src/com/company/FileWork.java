@@ -34,9 +34,9 @@ public class FileWork {
     private static String fileName = "C://blog/a.txt";
 
     public static void main(String[] args) throws FileNotFoundException {
-
+        FileWork fw=new FileWork();
         //Запись в файл
-        FileWorker.write(fileName, text);
+        fw.write(fileName, text);
 
     }
 }
