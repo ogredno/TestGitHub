@@ -18,7 +18,7 @@ public class Staff {
         this.salary = 0;
     }
 
-    public Staff(String name, String surname, String post, int salary) {
+    public void setStaff(String name, String surname, String post, int salary) {
         this.name = name;
         this.surname = surname;
         this.post = post;
@@ -30,6 +30,38 @@ public class Staff {
 
     public String output(int i) {
         return i+" " + name + " "+ surname +" " + post + " " + salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getPost() {
+        return post;
+    }
+
+    public void setPost(String post) {
+        this.post = post;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 }
 

@@ -19,6 +19,7 @@ public class FileWork {
 
             try {
                 //Записываем текст у файл
+
                 out.print(text);
             } finally {
                 //После чего мы должны закрыть файл
@@ -30,7 +31,14 @@ public class FileWork {
         }
     }
 
-
+   /* public static void update(String nameFile, String newText) throws FileNotFoundException {
+        StringBuilder sb = new StringBuilder();
+        exists(nameFile);
+        String oldFile = read(nameFile);
+        sb.append(oldFile);
+        sb.append(newText);
+        write(nameFile, sb.toString());
+    }*/
 
 
 }
