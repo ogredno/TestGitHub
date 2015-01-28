@@ -27,14 +27,9 @@ public class Staff {
 
 
 
-    @Override
-    public String toString() {
-        return "Staff{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", post='" + post + '\'' +
-                ", salary=" + salary +
-                  '}';
+
+    public String output(int i) {
+        return i+" " + name + " "+ surname +" " + post + " " + salary;
     }
 }
 

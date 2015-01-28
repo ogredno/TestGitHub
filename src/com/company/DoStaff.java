@@ -5,22 +5,22 @@ import java.util.*;
  */
 public class DoStaff {
     public static void main(String args[]){
-        String n;
-        String sn;
-        String p;
-        int sal;
+        String name;
+        String surname;
+        String post;
+        int salary;
 
 
         Scanner s=new Scanner(System.in);
         System.out.println("Input name and surname(space) : ");
-        n=s.next(); sn=s.next();
+        name=s.next(); surname=s.next();
         System.out.println(" Input post and salary(space): ");
-        p=s.next(); sal=s.nextInt();
-        Staff a=new Staff(n,sn,p,sal);
-        System.out.println(a);
-        FileWork fw=new FileWork();
+        post=s.next(); salary=s.nextInt();
+        Staff a=new Staff(name,surname,post,salary);
+        System.out.println(a.output(1));
 
-        fw.write("D://blog/a.txt",a.toString());
+
+        FileWork.write("D://blog/a.txt", (a.output(1)));
 
     }
 
