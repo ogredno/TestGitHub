@@ -18,6 +18,9 @@ public class DoStaff {
         p=s.next(); sal=s.nextInt();
         Staff a=new Staff(n,sn,p,sal);
         System.out.println(a);
+        FileWork fw=new FileWork();
+
+        fw.write("D://blog/a.txt",a.toString());
 
     }
 

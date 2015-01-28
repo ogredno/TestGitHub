@@ -30,13 +30,7 @@ public class FileWork {
         }
     }
 
-    private static String text = "This new text \nThis new text2\nThis new text3\nThis new text4\n";
-    private static String fileName = "C://blog/a.txt";
 
-    public static void main(String[] args) throws FileNotFoundException {
-        FileWork fw=new FileWork();
-        //Запись в файл
-        fw.write(fileName, text);
 
-    }
+
 }
